@@ -21,8 +21,6 @@ urlpatterns = patterns('',
 
     (r'^polls/', include('mysite.polls.urls')),
 
-    (r'^feedjack/', include('feedjack.urls')),
-
     (r'^static/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root': os.path.join(settings.ROOT_PATH, 'static')}),
 )
